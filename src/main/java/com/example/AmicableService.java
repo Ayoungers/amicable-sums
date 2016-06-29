@@ -88,5 +88,4 @@ public class AmicableService {
 
         return amicableNumbers;
     }
-
 }
