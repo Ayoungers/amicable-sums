@@ -1,5 +1,7 @@
-package com.example;
+package com.ayoungers.controller;
 
+import com.ayoungers.dto.AmicableRequestDto;
+import com.ayoungers.service.AmicableService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +20,7 @@ public class AmicableController {
     private Set<Integer> ids = new HashSet();
 
     @RequestMapping(value="/messages",method=RequestMethod.POST,produces="application/json",consumes="application/json")
-    public ResponseEntity messageHandler(@RequestBody AmicableRequestMapper request) {
+    public ResponseEntity messageHandler(@RequestBody AmicableRequestDto request) {
         int seed = request.getSeed();
         int missionId = request.getMissionId();
 

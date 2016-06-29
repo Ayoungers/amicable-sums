@@ -1,7 +1,7 @@
-package com.example;
+package com.ayoungers.dto;
 
 // Wrapper class to map keys from request body to an object
-public class AmicableRequestMapper {
+public class AmicableRequestDto {
     private Integer missionId;
     private Integer seed;
 

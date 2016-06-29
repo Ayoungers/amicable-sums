@@ -1,4 +1,4 @@
-package com.example;
+package com.ayoungers.controller;
 
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
